@@ -1,0 +1,27 @@
+﻿PYSPARK EXECUTION OUTPUT — ExpenseFlow Analytics
+================================================
+
+Input: expenses table (8 records joined with categories)
+Job: spark_expense_analytics_jdbc_only.py
+Status: SUCCESS (SparkContext stopped cleanly)
+
+--- MONTHLY TRENDS ---
+month       total_spent  transactions  avg_expense
+2026-10     8918.00      8             1114.75
+
+--- CATEGORY TRENDS ---
+category        total_spent  transactions  avg_expense
+Bills           2150.00      2             1075.00
+Education       2000.00      1             2000.00
+Shopping        2000.00      1             2000.00
+Food            1500.00      1             1500.00
+Health          520.00       1             520.00
+Transport       500.00       1             500.00
+Entertainment   248.00       1             248.00
+
+--- NOTES ---
+- PySpark read from MySQL via JDBC
+- Aggregated by month and category
+- Wrote results back to MySQL tables: analytics_monthly_trends, analytics_category_trends
+- Only warnings shown are Windows temp cleanup (not failures)
+- SparkContext successfully stopped (Uptime: ~9.5s)

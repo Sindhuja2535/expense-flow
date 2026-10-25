@@ -1,0 +1,6 @@
+﻿mysql : mysql: [Warning] Using a password on the command line interface can be insecure.
+At line:1 char:1
++ mysql -u expenseflow_app -pSindhuja_2535 -h localhost -D expenseflow  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (mysql: [Warning...an be insecure.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
